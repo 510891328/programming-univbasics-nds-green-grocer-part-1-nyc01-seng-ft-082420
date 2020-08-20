@@ -5,10 +5,10 @@ def find_item_by_name_in_collection(name, collection)
   #
   # Consult README for inputs and outputs
   item = {}
-  collection.each { |v, i|
+  collection.each { |v|
   binding.pry
     if v[:item] == name
-      item = collection[i]
+      item = v
     end
   }
   item
