@@ -26,14 +26,14 @@ def consolidate_cart(cart)
   cart_item = {}
   
   cart.each { |v, i|
-  binding.pry
-   cart_item[v[:item]][:price] = v[:price]
-   cart_item[v[:item]][:clearance] = v[:clearance]
-   if cart_item[v[:item]][:count]
-     cart_item[v[:item]][:count] += 1
-   else
-     cart_item[v[:item]][:count] = 1
-   end
+  
+    cart_item[v[:item]][:price] = v[:price]
+    cart_item[v[:item]][:clearance] = v[:clearance]
+    if cart_item[v[:item]][:count]
+      cart_item[v[:item]][:count] += 1
+    else
+      cart_item[v[:item]][:count] = 1
+    end
   }
   
   cart_item  
