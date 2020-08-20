@@ -10,12 +10,10 @@ def find_item_by_name_in_collection(name, collection)
       item = v
     end
   }
-  if item != {}
-    item
-  else
-    nil 
+  if item == {}
+    item = nil
   end
-  
+  item
 end
 
 def consolidate_cart(cart)
