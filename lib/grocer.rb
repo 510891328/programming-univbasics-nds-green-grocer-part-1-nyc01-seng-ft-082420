@@ -26,7 +26,7 @@ def consolidate_cart(cart)
   cart_item = {}
   
   cart.each { |v, i|
-   binding.pry 
+   cart_item[]
   }
   
 
